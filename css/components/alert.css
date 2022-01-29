@@ -1,0 +1,84 @@
+@import "../base/all.css";
+
+.dflex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-y{
+    flex-direction: column;
+}
+
+.flex-ai-start{
+    align-items: flex-start;
+}
+
+.m-left-auto{
+    margin-left: auto;
+}
+
+.alert{
+    padding:16px;
+    margin:16px;
+    border:1px solid transparent;
+    word-wrap: break-word;
+}
+
+.alert-info-icon{
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.alert-close-icon{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    color:rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+}
+
+.alert-close-icon:hover{
+    color:#000000bf;
+}
+
+.alert-message{
+    font-size: 16px;
+}
+
+.alert-description{
+    font-size: 14px;
+    margin-top: 4px;    
+}
+
+.alert-bg-error{
+    background-color: var(--alert-bg-error);
+}
+
+.alert-color-error{
+    color:var(--alert-color-error);
+}
+
+.alert-bg-info{
+    background-color: var(--alert-bg-info);
+}
+
+.alert-color-info{
+    color:var(--alert-color-info);
+}
+
+.alert-bg-success{
+    background-color: var(--alert-bg-success);
+}
+
+.alert-color-success{
+    color:var(--alert-color-success);
+}
+
+.alert-bg-warning{
+    background-color: var(--alert-bg-warning);
+}
+
+.alert-color-warning{
+    color:var(--alert-color-warning);
+}
