@@ -1,3 +1,5 @@
+@import "../utilites/borders.css";
+
 .avatar{
     border-radius: 999px;
     object-fit: cover;
