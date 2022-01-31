@@ -7,15 +7,15 @@
     margin:0.5rem;
 }
 
-.m-s{
+.m-sm{
     margin: 1rem;
 }
 
-.m-m{
+.m-md{
     margin: 1.5rem;
 }
 
-.m-l{
+.m-lg{
     margin: 2rem;
 }
 
@@ -327,15 +327,15 @@
     padding:0.5rem;
 }
 
-.p-s{
+.p-sm{
     padding: 1rem;
 }
 
-.p-m{
+.p-md{
     padding: 1.5rem;
 }
 
-.p-l{
+.p-lg{
     padding: 2rem;
 }
 
