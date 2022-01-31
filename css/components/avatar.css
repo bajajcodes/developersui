@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-@import "../base/all.css";
-@import "../utilites/borders.css";
-=======
 @import "../helpers/border.css";
->>>>>>> 1843f99eda41ee71c7f231052886c71b97fd3219
 
 .avatar{
     border-radius: var(--radius-full);
