@@ -1,6 +1,7 @@
 @import "../utilities/variables.css";
 @import "../helpers/spacing.css";
 @import "../helpers/flexbox.css";
+@import "../helpers/typography.css";
 
 .alert{
     padding:var(--size-9);
@@ -10,8 +11,7 @@
 }
 
 .alert-info-icon{
-    margin-right: var(--size-9);
-    font-size: 24px;
+    font-size: var(--size-11);
 }
 
 .alert-close-icon{
@@ -20,23 +20,21 @@
     background-color: transparent;
     outline: 0;
     color:rgba(0, 0, 0, 0.45);
-    font-size: 12px;
+    font-size: var(--size-7);
     font-family: var(--weight-light);
-    
 }
 
 .alert-close-icon:hover{
-    color:black;
+    color:var(--black);
 }
 
 .alert-message{
-    font-size: 16px;
+    font-size: var(--size-9);
     font-weight: var(--weight-black);
 }
 
 .alert-description{
-    font-size: 14px;   
-    font-weight: var(--weight-regular); 
+    font-size: var(--size-8);   
 }
 
 .alert-bg-error{
