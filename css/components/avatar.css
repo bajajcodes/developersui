@@ -1,0 +1,33 @@
+@import "../helpers/border.css";
+
+.avatar{
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    width: calc(3*var(--size-9));
+    height: calc(3*var(--size-9));
+}
+
+.avatar-sm{
+    width: calc(4.5*var(--size-9));
+    height: calc(4.5*var(--size-9));
+}
+
+.avatar-md{
+    width: calc(6*var(--size-9));
+    height: calc(6*var(--size-9));
+}
+
+.avatar-lg{
+    width: calc(7.5*var(--size-9));
+    height: calc(7.5*var(--size-9));
+}   
+
+.avatar-xl{
+    width: calc(9*var(--size-9));
+    height: calc(9*var(--size-9));
+}
+
+.avatar-xxl{
+    width: calc(10.5*var(--size-9));
+    height: calc(10.5*var(--size-9));
+}
