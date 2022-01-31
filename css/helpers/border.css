@@ -1,0 +1,65 @@
+@import "../utilities/variables.css";
+
+.border-dark-red{
+    border-color: var(--dark-red);
+}
+
+.border-dark-brown{
+    border-color: var(--dark-brown);
+}
+
+.border-dark-green{
+    border-color: var(--dark-green);
+}
+
+.border-dark-blue{
+    border-color: var(--dark-blue);
+}
+
+.border-dark-purple{
+    border-color: var(--dark-purple);
+}
+
+.border-dark-pink{
+    border-color: var(--dark-pink);
+}
+
+.border-1 {
+    border-width: 1px;
+}
+  
+.border-2 {
+    border-width: 2px;
+}
+  
+.border-3 {
+    border-width: 3px;
+}
+  
+.border-4 {
+    border-width: 4px;
+}
+  
+.border-5 {
+    border-width: 5px;
+}
+
+.rounded-0{
+    border-radius: 0;
+}
+
+.rounded-sm{
+    border-radius: var(--radius-sm);
+}
+
+.rounded-md{
+    border-radius: var(--radius-md);
+}
+
+.rounded-lg{
+    border-radius: var(--radius-lg);
+}
+
+.rounded-circle{
+    border-radius: var(--radius-full);
+}
