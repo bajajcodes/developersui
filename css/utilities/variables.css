@@ -35,7 +35,17 @@
     --size-2: 0.125rem;
     --size-1: 1px;
     --size-0: 0;
-    
+
+    --primrary:#FF3B30;
+    --secondary:#FFF6EA;
+    --action:#3B82F6;
+    --grey:#9A9A9A;
+    --black:#282828;
+    --white:#FFFFFF;
+    --lynx-white:#F7F7F7;
+    --voilet:#5348C7;
+    --lynx-gray:#C5C5C5;
+
     --dark-red:#7F1D1D;
     --dark-brown:#78350F;
     --dark-green:#064E3B;
