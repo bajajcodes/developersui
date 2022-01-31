@@ -1,0 +1,70 @@
+@import "../utilities/variables.css";
+@import "../helpers/spacing.css";
+@import "../helpers/flexbox.css";
+@import "../helpers/typography.css";
+
+.alert{
+    padding:var(--size-9);
+    margin:var(--size-9);
+    border:1px solid transparent;
+    word-wrap: break-word;
+}
+
+.alert-info-icon{
+    font-size: var(--size-11);
+}
+
+.alert-close-icon{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    color:rgba(0, 0, 0, 0.45);
+    font-size: var(--size-7);
+    font-family: var(--weight-light);
+}
+
+.alert-close-icon:hover{
+    color:var(--black);
+}
+
+.alert-message{
+    font-size: var(--size-9);
+    font-weight: var(--weight-black);
+}
+
+.alert-description{
+    font-size: var(--size-8);   
+}
+
+.alert-bg-error{
+    background-color: var(--alert-bg-error);
+}
+
+.alert-color-error{
+    color:var(--alert-color-error);
+}
+
+.alert-bg-info{
+    background-color: var(--alert-bg-info);
+}
+
+.alert-color-info{
+    color:var(--alert-color-info);
+}
+
+.alert-bg-success{
+    background-color: var(--alert-bg-success);
+}
+
+.alert-color-success{
+    color:var(--alert-color-success);
+}
+
+.alert-bg-warning{
+    background-color: var(--alert-bg-warning);
+}
+
+.alert-color-warning{
+    color:var(--alert-color-warning);
+}
