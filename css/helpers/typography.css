@@ -1,0 +1,104 @@
+@import "../utilities/variables.css";
+
+.h1,
+.text-xxl{
+    font-size: calc(3*var(--size-9));
+    line-height: 64px;
+}
+
+.h2,
+.text-xl{
+    font-size: calc(2*var(--size-9));
+    line-height: 40px;
+}
+
+.h3,
+.text-lg{
+    font-size: calc(1.5*var(--size-9));
+    line-height: 32px;
+}
+
+.h4,
+.text-md{
+    font-size: var(--size-9);
+    line-height: 24px;
+}
+
+.h5,
+.text-sm{
+    font-size: var(--size-5);
+    line-height: 16px;
+}
+
+.h1{
+    font-weight: var(--weight-black);
+}
+
+.h2{
+   font-weight: var(--weight-bold); 
+}
+
+.h3{
+    font-weight: var(--weight-semibold);
+}
+
+.h4{
+   font-weight: var(--weight-regular); 
+}
+
+.h5{
+    font-weight: var(--weight-light);
+}
+
+.text-left {
+    text-align: left;
+}
+  
+.text-right {
+    text-align: right;
+}
+  
+.text-center {
+    text-align: center;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.text-decoration-strike-through{
+    text-decoration: line-through;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+
+.text-bolder{
+    font-weight: var(--weight-black);
+}
+
+.text-bold{
+    font-weight: var(--weight-bold);
+}
+
+.text-semibold{
+    font-weight: var(--weight-semibold);
+}
+
+.text-normal{
+    font-weight: var(--weight-regular);
+}
+
+.text-light{
+    font-weight: var(--weight-light);
+}
+
+.text-style-italic{
+    font-style: italic;
+}
+
+.text-style-normal{
+    font-style: normal;
+}
+
