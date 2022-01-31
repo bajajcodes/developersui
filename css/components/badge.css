@@ -1,88 +1,94 @@
 @import "../helpers/spacing.css";
+@import "../utilities/variables.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .badge-wrapper{
-    border: 2px solid black;
-    margin: 50px;
     display: inline-block;
 }
 
-.pos-rel{
-    position: relative;
+.status-online{
+    background-color: var(--green);
+}
+
+.status-offline{
+    background-color: var(--grey);
+}
+
+.status-away{
+    background-color: var(--yellow); 
+}
+
+.status-dnd{
+    background-color: var(--red);
 }
 
 .badge-status{
-    position: absolute;
     padding: var(--size-4);
-    top:calc(3*var(--size-7));
+    top:calc(2.7*var(--size-7));
     left:calc(3*var(--size-7));
-}
-
-
-.badge-count{
-    position: absolute;
-    padding: var(--size-2);
-    color: white;
-    width:calc(var(--size-9));
-    height:calc(var(--size-9));
-    top:-15px;
-    left:15px;
-    font-weight: bold;
-}
-
-.badge-count-overflow{
-    padding:var(--size-3);
-    left:5px;
-    top:-20px;
 }
 
 .badge-status-sm{
     padding: var(--size-5);
-    top:calc(4.5*var(--size-7));
+    top:calc(4*var(--size-7));
     left:calc(4.5*var(--size-7));
-}
-
-.te{
-    top:-8px;
-    left:14px; 
 }
 
 .badge-status-md{
     padding: var(--size-6);
-    top:calc(6*var(--size-7));
+    top:calc(5.5*var(--size-7));
     left:calc(6*var(--size-7));
 }
 
 .badge-status-lg{
     padding: var(--size-7);
-    top:calc(7.5*var(--size-7));
+    top:calc(7*var(--size-7));
     left:calc(7.5*var(--size-7));
 }
 
 .badge-status-xl{
     padding: var(--size-8);
-    top:calc(9*var(--size-7));
+    top:calc(8.5*var(--size-7));
     left:calc(9*var(--size-7));
 }
 
 .badge-status-xxl{
     padding: var(--size-9);
-    top:calc(10.5*var(--size-7));
+    top:calc(10*var(--size-7));
     left:calc(10.5*var(--size-7));
 }
 
-.status-online{
-    background-color: #87d068;
+.count-green{
+    background-color: var(--green);
 }
 
-.status-offline{
-    background-color: #d9d9d9;
+.count-red{
+    background-color: var(--red);
 }
 
-.status-away{
-    background-color: #faad14; 
+.count-grey{
+    background-color: var(--grey);
 }
 
-.status-dnd{
-    background-color: #f50;
+.count-blue{
+    background-color: var(--blue);
+}
+
+.badge-count{
+    color: var(--white);
+    width:calc(var(--size-10));
+    height:calc(var(--size-10));
+    top:-50%;
+    left:50%; 
+    font-weight: var(--weight-bold);
+}
+
+.badge-count-overflow{
+    top:-40%;
+    left:50%; 
+}
+
+.badge-count-color-pos{
+    top:-20%;
+    left:50%; 
 }
