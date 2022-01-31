@@ -1,0 +1,56 @@
+:root{
+
+    --xs:480px;
+    --sm:640px;
+    --md:768px;
+    --lg:1024px;
+    --xl:1280px;
+    --xxl:1536px;
+
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --radius-full: 999px;
+
+    --weight-light:300;
+    --weight-regular:400;
+    --weight-semibold:600;
+    --weight-bold:700;
+    --weight-black:900;
+
+    --size-16: 2.75rem;
+    --size-15: 2.5rem;
+    --size-14: 2.25rem;
+    --size-13: 2rem;
+    --size-12: 1.75rem;
+    --size-11: 1.5rem;
+    --size-10: 1.25rem;
+    --size-9: 1rem;
+    --size-8: 0.875rem;
+    --size-7: 0.75rem;
+    --size-6: 0.625rem;
+    --size-5: 0.5rem;
+    --size-4: 0.375rem;
+    --size-3: 0.25rem;
+    --size-2: 0.125rem;
+    --size-1: 1px;
+    --size-0: 0;
+    
+    --dark-red:#7F1D1D;
+    --dark-brown:#78350F;
+    --dark-green:#064E3B;
+    --dark-blue:#1E3A8A;
+    --dark-purple:#4C1D95;
+    --dark-pink:#831843;
+
+    --alert-bg-error:#FED7D7;
+    --alert-bg-info:#BEE3F8;
+    --alert-bg-success:#CEF6D5;
+    --alert-bg-warning:#FEEBC8;
+
+    --alert-color-error:#DC2626;
+    --alert-color-info:#2563EB;
+    --alert-color-success:#059669;
+    --alert-color-warning:#D97706;
+
+}
