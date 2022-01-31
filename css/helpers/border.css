@@ -1,0 +1,78 @@
+@import "../utilities/variables.css";
+
+.border{
+    border: 1px solid;
+}
+
+.border-0{
+    border-width: var(--size-0);
+}
+
+.border-xs {
+    border-width: var(--size-2);
+}
+  
+.border-sm {
+    border-width: var(--size-3);
+}
+  
+.border-md {
+    border-width: var(--size-4);
+}
+  
+.border-lg {
+    border: 1px solid;
+    border-width: var(--size-5);
+}
+  
+.border-xl {
+    border-width: var(--size-7);
+}
+
+.border-xxl{
+    border-width: var(--size-9);
+}
+
+.border-dark-red{
+    border-color: var(--dark-red);
+}
+
+.border-dark-brown{
+    border-color: var(--dark-brown);
+}
+
+.border-dark-green{
+    border-color: var(--dark-green);
+}
+
+.border-dark-blue{
+    border-color: var(--dark-blue);
+}
+
+.border-dark-purple{
+    border-color: var(--dark-purple);
+}
+
+.border-dark-pink{
+    border-color: var(--dark-pink);
+}
+
+.border-rounded-0{
+    border-radius: var(--size-0);
+}
+
+.border-rounded-sm{
+    border-radius: var(--radius-sm);
+}
+
+.border-rounded-md{
+    border-radius: var(--radius-md);
+}
+
+.border-rounded-lg{
+    border-radius: var(--radius-lg);
+}
+
+.border-rounded-circle{
+    border-radius: var(--radius-full);
+}

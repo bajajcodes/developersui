@@ -1,37 +1,38 @@
+<<<<<<< HEAD
 @import "../base/all.css";
 @import "../utilites/borders.css";
+=======
+@import "../helpers/border.css";
+>>>>>>> 1843f99eda41ee71c7f231052886c71b97fd3219
 
 .avatar{
-    border-radius: 999px;
+    border-radius: var(--radius-full);
     object-fit: cover;
-}
-
-.avatar-xs{
-    width: 48px;
-    height: 48px;
+    width: calc(3*var(--size-9));
+    height: calc(3*var(--size-9));
 }
 
 .avatar-sm{
-    width: 72px;
-    height: 72px;
+    width: calc(4.5*var(--size-9));
+    height: calc(4.5*var(--size-9));
 }
 
 .avatar-md{
-    width: 96px;
-    height: 96px;
+    width: calc(6*var(--size-9));
+    height: calc(6*var(--size-9));
 }
 
 .avatar-lg{
-    width: 120px;
-    height: 120px;
+    width: calc(7.5*var(--size-9));
+    height: calc(7.5*var(--size-9));
 }   
 
 .avatar-xl{
-    width: 144px;
-    height: 144px;
+    width: calc(9*var(--size-9));
+    height: calc(9*var(--size-9));
 }
 
-.avatar-2xl{
-    width: 168px;
-    height: 168px;
+.avatar-xxl{
+    width: calc(10.5*var(--size-9));
+    height: calc(10.5*var(--size-9));
 }
