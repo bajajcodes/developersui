@@ -22,6 +22,12 @@
     background-color: var(--red);
 }
 
+/* 
+Here --size-7 is 0.75rem
+What done here is calculating position of badge dynamically based on avatar size.
+As from top approx 65% and left approx 70% for all avatar size.
+*/
+
 .badge-status{
     padding: var(--size-4);
     top:calc(2.7*var(--size-7));
@@ -76,8 +82,8 @@
 
 .badge-count{
     color: var(--white);
-    width:calc(var(--size-10));
-    height:calc(var(--size-10));
+    width:var(--size-10);
+    height:var(--size-10);
     top:-50%;
     left:50%; 
     font-weight: var(--weight-bold);
