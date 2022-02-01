@@ -1,0 +1,61 @@
+@import "../utilities/variables.css";
+
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--grey);
+    padding:var(--size-4) var(--size-9);
+    font-size: var(--size-9);
+    height: var(--size-15);
+}
+
+.btn:hover{
+    border-color: var(--black);
+}
+
+.btn[disabled]{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    color: var(--white);
+    background-color: var(--dark-primary);
+    border-color: transparent;
+}
+
+.btn-primary[disabled]:hover{
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: transparent;
+}
+
+.btn-outline-primary{
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover{
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary[disabled]:hover{
+    color: var(--primary);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-full-width{
+    width: 100%;
+}
