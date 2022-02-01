@@ -36,9 +36,9 @@
     --size-1: 1px;
     --size-0: 0;
 
-    --danger:#FF3B30;
-    --secondary:#FFF6EA;
-    --primary:#3B82F6;
+    --primary:#FF3B30;
+    --light-white:#FFF6EA;
+    --secondary:#3B82F6;
     --grey:#9A9A9A;
     --black:#282828;
     --white:#FFFFFF;
@@ -47,10 +47,19 @@
     --lynx-gray:#C5C5C5;
 
     --green:#87d068;
-    --red:#f50;
+    --red:#ff5500;
     --yellow:#faad14;
     --blue:#45d9ec;
 
+    --btn-primary:#45d9ec;
+    --btn-dark-primary:#17c6de;
+    --btn-secondary:#6c757d;
+    --btn-dark-secondary:#5f666d;
+    --btn-success:#87d068;
+    --btn-dark-success:#6bc544;
+    --btn-danger:#ff5500;
+    --btn-dark-danger:#cc4400;
+    
     --dark-red:#7F1D1D;
     --dark-brown:#78350F;
     --dark-green:#064E3B;
