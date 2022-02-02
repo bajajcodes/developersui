@@ -203,8 +203,11 @@
     font-size: var(--size-8);
 }
 
-/* button floating */
-.btn-fab{
+/* floating action button 
+   with background color and
+   without background color 
+*/
+.btn-floating{
     color: var(--white);
     width: var(--size-16);
     height: var(--size-16);
@@ -214,7 +217,7 @@
     padding: var(--size-0);
 }
 
-.btn-fab-nbg{
+.btn-floating-wbg{
     color: initial;
     border: var(--size-0);
 }
