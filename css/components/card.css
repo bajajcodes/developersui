@@ -85,8 +85,7 @@
 */
 .card-img-text-overlay {
     position: absolute;
-    top: 50%;
-    left:25%;
+    top:30%;
     padding: var(--size-9);
     color: var(--white);
 }
@@ -117,10 +116,9 @@
 }
 
 .card-row>img{
-    width: 40%;
-    object-fit: fill;
+    max-width: 33%;
 }
 
-.card-row>.card-content-container{
-    width: 60%;
+.card-row>.card-body{
+    width: 66%;
 }
