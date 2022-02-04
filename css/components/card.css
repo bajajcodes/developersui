@@ -1,0 +1,124 @@
+@import "../utilities/variables.css";
+@import "../helpers/flexbox.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+/* Card defualt style and
+   Base for all cards.
+   Card is divided into three 
+   sections header, footer and body.
+   Here header and footer are optional.
+   By default card will be horizontal.
+*/
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: var(--white);
+    background-clip: border-box;
+    border: var(--size-1) solid;
+    border-radius: var(--size-3);
+    width: calc(19*var(--size-9));
+    box-shadow: 10px 10px 1px var(--card-box-shadow);
+}
+
+/* card-body has been given these
+   flex grow, shrink and basis as
+   if multiple cards are added in a
+   container then that case each card 
+   will persist/mantain same width and
+   will look consistent */
+.card-body {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    padding:var(--size-9);
+}
+
+.card-img{
+    width: 100%;
+}
+  
+.card-heading{
+    margin-bottom: var(--size-5);
+}
+
+.card-title {
+    margin-bottom: var(--size-5);
+    font-size: var(--size-11);
+}
+  
+.card-subtitle {
+    margin-top: -0.25rem;
+    font-size: var(--size-10);
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-footer {
+    padding: var(--size-5);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-btn{
+    padding: var(--size-5);
+    border: none;
+    cursor: pointer;
+    background: var(--white);
+    font-weight: bold;
+    align-self: center;
+}
+
+.card-btn:hover{
+    transform: scale(1.1);
+}
+
+/* card image overlay in two
+   varitaitons text and dismiss.
+*/
+.card-img-text-overlay {
+    position: absolute;
+    top:30%;
+    padding: var(--size-9);
+    color: var(--white);
+}
+
+/* using already applied padding and 
+   setting top and right to zero
+   make it aligned to right corner
+   of the card. */
+.card-img-dismiss-overlay{
+    color: var(--grey);
+    padding: var(--size-9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.card-img-dismiss-overlay:hover{
+    color: var(--black);
+    transform: scale(1.5);
+}
+
+/* horizontal card */
+.card-row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-row>img{
+    max-width: 33%;
+}
+
+.card-row>.card-body{
+    width: 66%;
+}
