@@ -81,4 +81,9 @@
     --alert-color-warning:#D97706;
 
     --card-box-shadow:#aaaaaa;
+
+    --input-border-color:#86b7fe;
+    --input-box-shadow:rgba(134,184,254,0.25);
+    --input-success-box-shadow:rgba(135,208,104,0.25);
+    --input-danger-box-shadwo:rgba(255,85,0,0.25);
 }
