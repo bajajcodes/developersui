@@ -5,9 +5,6 @@
 
 /* Card defualt style and
    Base for all cards.
-   Card is divided into three 
-   sections header, footer and body.
-   Here header and footer are optional.
    By default card will be horizontal.
 */
 .card{
