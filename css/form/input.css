@@ -41,20 +41,20 @@
 
 /* input text states*/
 .input:focus,
-.input:focus-visible {
+.input:active {
     outline: 0;
     border-color: var(--input-border-color);
     box-shadow: 0 0 0 var(--size-3) var(--input-box-shadow);
 }
 
 .input.input-success:focus,
-.input.input-success:focus-visible{
+.input.input-success:active{
     border-color: var(--green);
     box-shadow: 0 0 0 var(--size-3) var(--input-success-box-shadow);
 }
 
 .input.input-danger:focus,
-.input.input-danger:focus-visible{
+.input.input-danger:active{
     border-color: var(--red);
     box-shadow: 0 0 0 var(--size-3) var(--input-danger-box-shadow);
 }
