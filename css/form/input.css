@@ -1,0 +1,103 @@
+/* These css files are imported here for 
+   reusbality and later will moved or accessed 
+   from main or root css file.  */
+@import "../base/reset.css";
+@import "../utilities/variables.css";
+@import "../helpers/flexbox.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* default style for input text */
+.input{
+    display: block;
+    width: 100%;
+    padding: var(--size-4) var(--size-7);
+    font-size: var(--size-9);
+    color: var(--black);
+    background-color: var(--white);
+    background-clip: padding-box;
+    border: 1px solid var(--lynx-gray);
+    cursor: pointer;
+}
+
+/* input box sizes sm and large */
+.input-sm{
+    padding: var(--size-3) var(--size-5);
+    font-size: var(--size-8);;
+}
+
+.input-lg{
+    padding: var(--size-5) var(--size-9);
+    font-size: var(--size-10);
+}
+
+/* input text validation pass and fail colors */
+.input-success{
+    border-color: var(--green);
+}
+
+.input-danger{
+    border-color: var(--red);
+}
+
+/* input text states*/
+.input:focus,
+.input:focus-visible {
+    outline: 0;
+    border-color: var(--input-border-color);
+    box-shadow: 0 0 0 var(--size-3) var(--input-box-shadow);
+}
+
+.input.input-success:focus,
+.input.input-success:focus-visible{
+    border-color: var(--green);
+    box-shadow: 0 0 0 var(--size-3) var(--input-success-box-shadow);
+}
+
+.input.input-danger:focus,
+.input.input-danger:focus-visible{
+    border-color: var(--red);
+    box-shadow: 0 0 0 var(--size-3) var(--input-danger-box-shadow);
+}
+
+/* input grouping or wrapper for input text 
+    and other such as icon or helper texts. */
+.input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+/* helpers along inside input text inside input wrapper or group */
+/* by helper it mean text or icon which helps user to easily associate
+   what this input is about.  */
+.input-group-text,
+.input-group-icon{
+    display: flex;
+    align-items: center;
+    padding: var(--size-4) var(--size-7);
+    font-size: var(--size-9);
+    color: var(--black);
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+/* helpers size small and large, change 
+   input group or wrapper size it automatically updates
+   children or wrapped input text and helpers.  */
+.input-group-sm > .input,
+.input-group-sm > .input-group-text,
+.input-group-sm > .input-group-icon{
+  padding: var(--size-3) var(--size-5);
+  font-size: var(--size-8);
+}
+
+.input-group-lg > .input,
+.input-group-lg > .input-group-text,
+.input-group-lg > .input-group-icon{
+  padding: var(--size-5) var(--size-9);
+  font-size: var(--size-10);
+}
