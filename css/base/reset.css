@@ -13,8 +13,13 @@ html {
     padding: 0;
 }
 
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 img{
