@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/utilities/variables.css">
+    <link rel="stylesheet" href="css/helpers/typography.css">
     <title>Dev Ui</title>
     <style>
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+        
 
         body{
             border: 2px solid;
+            font-family: 'Courier New', Courier, monospace;
         }
         img{
             max-width: 10rem;
@@ -37,7 +43,7 @@
 
 body{
     text-align: center;
-padding-top: 90px;
+/* padding-top: 90px; */
 }
 
 .twin-button {
@@ -57,21 +63,13 @@ padding-top: 90px;
             opacity: 0.8;
             font-weight: bold;
         }   
-
-    </style>
-
-    <style>
-
-@import "../utilities/variables.css";
-@import "../helpers/typography.css";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-        
+  
 .navbar{
+    padding: var(--size-15) var(--size-9);
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    padding: var(--size-9);
+    align-items: center;
 }
 
 .navbar-brand {
@@ -85,6 +83,8 @@ padding-top: 90px;
 
 .navbar-brand a{
     color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 
 .navbar-nav{
@@ -93,6 +93,24 @@ padding-top: 90px;
     align-items: center;
     padding: 0;
     list-style-type: none;
+}
+
+.navbar-nav{
+    justify-content: space-evenly;
+}
+
+.navbar-nav li{
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.navbar-nav a {
+  font-weight: 800;
+  color: rgb(90, 90, 90);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: all .3s ease;
 }
 
  .nav-item .nav-link{
@@ -121,6 +139,7 @@ padding-top: 90px;
     display: inline-block ;
 }
 
+
 @media (max-width:768px){
     .navbar-nav{
       display: none;
@@ -143,17 +162,56 @@ padding-top: 90px;
     }
 
 }
+
+a{
+    text-decoration: none;
+}
+
+.align-text-top{
+  vertical-align: top;
+}
     </style>
 
 
 </head>
 <body class="container">
 
-                <main>
+    <nav class="navbar">
+
+        <div class="navbar-brand">
+          <a href="#" class="nav-link">
+            <img src="../assets/logo/logo.svg" alt="" width="40" height="40" class="d-inline-block align-text-top">
+            Dev Ui
+          </a>
+        </div>
+
+        <button class="hamburger" id="hamburger">
+            <span class="material-icons">
+              menu
+              </span>
+        </button>
+
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">Works</a></li>
+        </ul>
+
+      </nav>
+
+                <main class="">
                     <img src="assets/logo/logo.svg" alt="">
                     <h1>Developers UI</h1>
                     <p class="description">A CSS library which provides ready-to-use components, helps in get rid of repetitive work and provides extra time to progress in projects.</p>
                     <button class="twin-button">Get Started</button>
                 </main>
+
+                <script>
+                    const hamburger = document.getElementById("hamburger");
+                    const navbarNav = document.getElementById("navbar-nav");
+                    hamburger.addEventListener("click", () => {
+                      navbarNav.classList.toggle("show"); 
+                    })
+                  </script>
 </body>
 </html>
