@@ -6,212 +6,49 @@
     <link rel="stylesheet" href="css/base/reset.css">
     <link rel="stylesheet" href="css/utilities/variables.css">
     <link rel="stylesheet" href="css/helpers/typography.css">
+    <link rel="stylesheet" href="css/helpers/spacing.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Dev Ui</title>
-    <style>
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
-        
-
-        body{
-            border: 2px solid;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        img{
-            max-width: 10rem;
-            margin: 0 auto;
-       }
-       h1{
-           font-size: 3rem;
-       }
-
-.description {
-  margin: auto;
-  padding: 1rem 0 1.5rem;
-  max-width: 750px;
-  width: 90%;
-  text-align: center;
-  font-size: 1.4rem;
-  line-height: 2.5rem;
-}
-
-.container {
-  width: 90%;
-  min-height: 100vh;
-  height: max-content;
-  margin: auto;
-}
-
-body{
-    text-align: center;
-/* padding-top: 90px; */
-}
-
-.twin-button {
-  margin: auto;
-  text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-            background-color: black;
-            color: white;
-            padding: 1.125rem 1.875rem;
-            margin: 0.25rem;
-            min-width: 10rem;
-            font-weight: 500;
-}
-
-.twin-button:hover{
-            opacity: 0.8;
-            font-weight: bold;
-        }   
-  
-.navbar{
-    padding: var(--size-15) var(--size-9);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-brand {
-    padding-top: var(--size-4);
-    padding-bottom: var(--size-4);
-    margin-right: var(--size-9);
-    font-size: var(--size-10);
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.navbar-brand a{
-    color: var(--black);
-    font-size: 1.2rem;
-    font-weight: 900;
-}
-
-.navbar-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    list-style-type: none;
-}
-
-.navbar-nav{
-    justify-content: space-evenly;
-}
-
-.navbar-nav li{
-    margin: 0 1rem;
-    list-style: none;
-}
-
-.navbar-nav a {
-  font-weight: 800;
-  color: rgb(90, 90, 90);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: .9rem;
-  transition: all .3s ease;
-}
-
- .nav-item .nav-link{
-    display: inline-block;
-    padding: var(--size-6) var(--size-10);
-    color: var(--grey);
-}
-
-.hamburger{
-    background-color: transparent;
-    border: 0;
-    font-size: var(--size-10);
-    cursor: pointer;
-    display: none;
-}
-
-.hamburger:focus{
-    outline: none;
-}
-
-.nav-link.active{
-    color: var(--black);
-}
-
-.d-inline-block {
-    display: inline-block ;
-}
-
-
-@media (max-width:768px){
-    .navbar-nav{
-      display: none;
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: calc(4*var(--size-6));
-    }
-
-    .navbar-nav.show{
-      display: flex;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-      padding: var(--size-6);
-    }
-
-    .hamburger{
-      display: block ;
-    }
-
-}
-
-a{
-    text-decoration: none;
-}
-
-.align-text-top{
-  vertical-align: top;
-}
-    </style>
-
-
-</head>
-<body class="container">
+    </head>
+    <body class="container-home">
 
     <nav class="navbar">
 
         <div class="navbar-brand">
-          <a href="#" class="nav-link">
-            <img src="../assets/logo/logo.svg" alt="" width="40" height="40" class="d-inline-block align-text-top">
-            Dev Ui
-          </a>
+            <a href="#" class="nav-link">
+                <img src="../assets/logo/logo.svg" width="40" height="40" class="d-inline-block align-text-top">
+                Dev Ui
+            </a>
         </div>
 
         <button class="hamburger" id="hamburger">
             <span class="material-icons">
-              menu
-              </span>
+            menu
+            </span>
         </button>
 
         <ul class="navbar-nav" id="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link " href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link " href="#">Works</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link " href="#">Works</a></li>
         </ul>
+        
+    </nav>
 
-      </nav>
+      <main class="main mt-16">
+            <img src="assets/logo/logo.svg" class="home-logo">
+            <h1 class="h1">Developers UI</h1>
+            <p class="description">A CSS library which provides ready-to-use components, helps in get rid of repetitive work and provides extra time to progress in projects.</p>
+            <button class="home-button">Get Started</button>
+      </main>
 
-                <main class="">
-                    <img src="assets/logo/logo.svg" alt="">
-                    <h1>Developers UI</h1>
-                    <p class="description">A CSS library which provides ready-to-use components, helps in get rid of repetitive work and provides extra time to progress in projects.</p>
-                    <button class="twin-button">Get Started</button>
-                </main>
-
-                <script>
-                    const hamburger = document.getElementById("hamburger");
-                    const navbarNav = document.getElementById("navbar-nav");
-                    hamburger.addEventListener("click", () => {
-                      navbarNav.classList.toggle("show"); 
-                    })
-                  </script>
-</body>
+    <script>
+          const hamburger = document.getElementById("hamburger");
+          const navbarNav = document.getElementById("navbar-nav");
+          hamburger.addEventListener("click", () => {
+            navbarNav.classList.toggle("show"); 
+          })
+    </script>
+    </body>
 </html>
