@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .navbar{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -47,6 +48,11 @@
     color: var(--grey);
 }
 
+.nav-item .nav-link:hover{
+    color: var(--black);
+    text-decoration: underline;
+}
+
 .nav-link.active{
     color: var(--black);
 }
@@ -80,6 +86,9 @@
   
     .navbar-nav.show{
       display: flex;
+      position: absolute;
+      z-index: 1;
+      top:10vw;
     }
   
     .navbar-nav .nav-item .nav-link {

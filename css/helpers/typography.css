@@ -3,31 +3,31 @@
 .h1,
 .text-xxl{
     font-size: calc(3*var(--size-9));
-    line-height: 64px;
+    line-height: calc(4*var(--size-9));
 }
 
 .h2,
 .text-xl{
     font-size: calc(2*var(--size-9));
-    line-height: 40px;
+    line-height: var(--size-16);
 }
 
 .h3,
 .text-lg{
     font-size: calc(1.5*var(--size-9));
-    line-height: 32px;
+    line-height: var(--size-13);
 }
 
 .h4,
 .text-md{
     font-size: var(--size-9);
-    line-height: 24px;
+    line-height: var(--size-11);
 }
 
 .h5,
 .text-sm{
     font-size: var(--size-5);
-    line-height: 16px;
+    line-height: var(--size-9);
 }
 
 .h1{

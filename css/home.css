@@ -1,3 +1,15 @@
+.container-home {
+    width: 90%;
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+.main{
+    margin-top: calc(var(--size-9)+0.5vw);
+}
+
 .home-logo{
     max-width: 10rem;
     margin: 0 auto;
@@ -9,33 +21,24 @@
     max-width: var(--md);
     width: 90%;
     text-align: center;
-    font-size: var(--size-11);
+    font-size: calc(var(--size-11) + 0.5vw);
     line-height: var(--size-15);
 }
 
-.container-home {
-    width: 90%;
-    min-height: 100vh;
-    height: max-content;
-    margin: auto;
-    text-align: center;
-}
-
 .home-button {
-    margin: auto;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
     background-color: var(--black);
     color: var(--white);
     padding: var(--size-10) var(--size-12);
-    margin: var(--size-3);
     min-width: calc(10*var(--size-9));
     font-weight: var(--weight-semibold);
 }
 
 .home-button:hover{
-    opacity: 0.8;
-    font-weight: bold;
+    background-color: #A0FFF0;
+    border: 2px solid;
+    color: black;
 }   
   
