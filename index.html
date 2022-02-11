@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/devui.css">
     <link rel="stylesheet" href="css/home.css">
+    <script src="scripts/navbar.js" defer></script>
     <title>Dev Ui</title>
     </head>
-    <body class="container-home">
+    <body>
 
     <nav class="navbar">
 
         <div class="navbar-brand">
             <a href="/" class="nav-link">
-                <img src="../../assets/logo/logo.svg" width="40" height="40" class="d-inline-block align-text-top">
+                <img src="assets/logo/logo.svg" width="40" height="40" class="d-inline-block align-text-top">
                 <span>Dev Ui</span>
             </a>
         </div>
@@ -26,25 +27,18 @@
 
         <ul class="navbar-nav" id="navbar-nav">
             <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link " href="examples/pages/docs.html">Docs</a></li>
+            <li class="nav-item"><a class="nav-link " href="pages/docs.html">Docs</a></li>
             <li class="nav-item"><a class="nav-link " href="https://github.com/shmbajaj/developersui">Github</a></li>
         </ul>
         
     </nav>
 
-      <main class="main mb-11">
+      <main class="main container-home">
             <img src="assets/logo/logo.svg" class="home-logo">
             <h1 class="h1">Developers UI</h1>
             <p class="description">A CSS library which provides ready-to-use components, helps in get rid of repetitive work and provides extra time to progress in projects.</p>
-            <a class="home-button link-btn mt-5" href="examples/pages/docs.html" role="button"><span>Get Started</span></a>
+            <a class="home-button link-btn mt-5" href="pages/docs.html" role="button"><span>Get Started</span></a>
       </main>
 
-    <script>
-          const hamburger = document.getElementById("hamburger");
-          const navbarNav = document.getElementById("navbar-nav");
-          hamburger.addEventListener("click", () => {
-            navbarNav.classList.toggle("show"); 
-          })
-    </script>
     </body>
 </html>
