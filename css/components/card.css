@@ -1,8 +1,3 @@
-@import "../utilities/variables.css";
-@import "../helpers/flexbox.css";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
-
 /* Card defualt style and
    Base for all cards.
    Card is divided into three 
@@ -19,8 +14,8 @@
     background-clip: border-box;
     border: var(--size-1) solid;
     border-radius: var(--size-3);
-    width: calc(19*var(--size-9));
-    box-shadow: 10px 10px 1px var(--card-box-shadow);
+    width: calc(20*var(--size-9));
+    /* box-shadow: 10px 10px 1px var(--card-box-shadow); */
 }
 
 /* card-body has been given these
@@ -74,6 +69,7 @@
     background: var(--white);
     font-weight: bold;
     align-self: center;
+    text-transform: uppercase;
 }
 
 .card-btn:hover{
@@ -113,6 +109,7 @@
 .card-row{
     flex-direction: row;
     flex-wrap: wrap;
+    width: calc(22*var(--size-9));
 }
 
 .card-row>img{
@@ -121,4 +118,8 @@
 
 .card-row>.card-body{
     width: 66%;
+}
+
+.card-row .card-footer{
+    width: 100%;
 }
