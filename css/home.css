@@ -1,26 +1,25 @@
 .container-home {
-    width: 90%;
-    min-height: 100vh;
-    height: max-content;
-    margin: auto;
+    margin: 1vmin auto;
+    width: var(--container-width);
+    min-height: var(--container-height);
     text-align: center;
 }
 
 .main{
-    margin-top: var(--size-10)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-logo{
-    max-width: 10rem;
+    max-width: calc(10*var(--size-9));
     margin: 0 auto;
 }
 
 .description {
-    margin: auto;
     padding: var(--size-9) 0 var(--size-11);
-    max-width: var(--md);
     width: 90%;
-    text-align: center;
     font-size: calc(var(--size-11) + 0.5vw);
     line-height: var(--size-15);
 }
@@ -37,7 +36,7 @@
 }
 
 .home-button:hover{
-    background-color: #38cfea;
+    background-color: var(--logo-color);
     border: 2px solid;
     color: black;
     font-weight: var(--weight-black);
