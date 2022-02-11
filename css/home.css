@@ -37,8 +37,9 @@
 }
 
 .home-button:hover{
-    background-color: #A0FFF0;
+    background-color: #38cfea;
     border: 2px solid;
     color: black;
+    font-weight: var(--weight-black);
 }   
   
