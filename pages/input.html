@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/devui.css">
+    <link rel="stylesheet" href="../docs.css">
+    <script src="../scripts/navbar.js" defer></script>
+    <title>Docs</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+
+          <div class="navbar-brand">
+            <a href="../../index.html" class="nav-link">
+              <img src="../../assets/logo/logo.svg" alt="" width="40" height="40" class="d-inline-block align-text-top">
+              Dev Ui
+            </a>
+          </div>
+  
+          <button class="hamburger" id="hamburger">
+              <span class="material-icons">
+                menu
+                </span>
+          </button>
+  
+          <ul class="navbar-nav" id="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="docs.html">Docs</a></li>
+            <li class="nav-item"><a class="nav-link " href="https://github.com/shmbajaj/developersui">Github</a></li>
+          </ul>
+  
+        </nav>
+    </header>
+
+<aside class="aside" id="aside">
+    <nav class="navbar " id="aside-navbar">
+        <h2>Getting Started</h2>
+        <ul class="aside-navbar-nav" id="aside-navbar-nav">
+                <li class="nav-item"><a href="docs.html" class="nav-link">Installation</a></li>
+            </ul>
+        <h2>Components</h2>
+        <ul class="aside-navbar-nav" id="aside-navbar-nav">
+                <li class="nav-item"><a href="alert.html" class="nav-link">Alert</a></li>
+                <li class="nav-item"><a href="alert.html" class="nav-link ">Avatar</a></li>
+                <li class="nav-item"><a href="badge.html" class="nav-link">Badge</a></li>
+                <li class="nav-item"><a href="button.html" class="nav-link ">Button</a></li>
+                <li class="nav-item "><a href="card.html" class="nav-link">Card </a></li>
+                <li class="nav-item"><a href="heading.html" class="nav-link">Heading</a></li>
+                <li class="nav-item"><a href="image.html" class="nav-link">Image</a></li>
+                <li class="nav-item"><a href="input.html" class="nav-link active">Input</a></li>
+                <li class="nav-item"><a href="list.html" class="nav-link">List</a></li>
+                <li class="nav-item"><a href="navbar.html" class="nav-link">Navbar </a></li>
+            </ul>
+
+        </nav>
+        </nav>
+      <button class="aside_hamburger" id="aside_hamburger">
+        <span class="material-icons">
+          expand_more
+          </span>
+    </button>
+    </aside>
+
+    <main class="container">
+
+        <article class="article">
+            <h2>Input Text</h2>
+
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Input Texbox</h3>
+                        <p>
+                            Input text comes in three sizes small(sm), medium (md and default) and large(lg). Input default style is associated with blue color on different actions and properties.
+                        </p>
+                </div>
+                <div class="article-component-body">
+                    <input type="text" class="input" placeholder="win and help win others">
+                    <input type="text" class="input input-sm" placeholder="win and help win others">
+                    <input type="text" class="input" placeholder="win and help win others">
+                    <input type="text" class="input input-lg" placeholder="win and help win others">
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/86340b063f6c56950ac1a67d157ee6a3.js">
+                        </script>
+                    </code>
+                </div>
+            </div>
+
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Input Correct and Incorrect</h3>
+                        <p>
+                            Correct input is associated with green color which also mean success, whereas Incorrect input is associated with red color which also mean danger. Rest default input styles are preserved.
+                        </p>
+                </div>
+                <div class="article-component-body">
+                    <input type="text" class="input input-success" placeholder="correct input">
+                    <input type="text" class="input input-danger" placeholder="incorrect input">
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/f1b0d4d71ab1b994817a2f4320fcb643.js">
+                        </script>
+                    </code>
+                </div>
+            </div>
+
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Input Grouping with Text</h3>
+                        <p>
+                           Text associated with input on either sides and can also be used as labels.
+                        </p>
+                </div>
+                <div class="article-component-body">
+                    <div class="flex-nowrap input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="input" placeholder="Username">
+                    </div>
+                    <div class="flex-nowrap input-group">
+                        <input type="text" class="input" placeholder="Username">
+                        <span class="input-group-text">@writer.in</span>
+                    </div>
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/3095897094fa733fe5a7ea2404f69e08.js">
+                        </script>
+                    </code>
+                </div>
+            </div>
+
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Input Grouping with Icons</h3>
+                        <p>
+                            Icon associated with input on either sides is used to visually assist user to enter correct input.
+                        </p>
+                </div>
+                <div class="article-component-body">
+                    <div class="flex-nowrap input-group">
+                        <span class="material-icons input-group-icon">
+                        rocket_launch
+                        </span>
+                        <input type="text" class="input" placeholder="Username">
+                    </div>
+                    <div class="flex-nowrap input-group">
+                        <input type="text" class="input" placeholder="Username">
+                        <span class="material-icons input-group-icon">
+                            rocket_launch
+                        </span>
+                    </div>
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/befd6f86e200b1ac74861370a5a0be6a.js">
+                        </script>
+                    </code>
+                </div>
+            </div>
+
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Input Grouping with Text and Icon</h3>
+                        <!-- <p>
+                            some description about component will come here buddy.
+                        </p> -->
+                </div>
+                <div class="article-component-body">
+                    <div class="flex-nowrap input-group">
+                        <span class="material-icons input-group-icon">
+                            rocket_launch
+                        </span>
+                        <input type="text" class="input" placeholder="Username">
+                        <span class="input-group-text">
+                            @bajaj
+                        </span>
+                    </div>
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/593d68b39a52b6236b3005e798bc91e1.js">
+                        </script>
+                    </code>
+                </div>
+            </div>
+
+            <!-- <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Some Subtitle will come here buddy</h3>
+                        <p>
+                            some description about component will come here buddy.
+                        </p>
+                </div>
+                <div class="article-component-body">
+                    <h4 >Input on different states</h4>
+                    <input type="text" class="input" placeholder="win and help win others">
+                    <input type="text" class="input input-success" placeholder="everyone +1">
+                    <input type="text" class="input input-danger" placeholder="me +1 others -1">
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/a1160cf91e306f68f7360ea5ab3e4e92.js">
+                        </script>
+                    </code>
+                </div>
+            </div> -->
+
+        </article>
+
+    </main>
+
+<footer class="footer">
+<div class="footer-brand">
+  <div class="navbar-brand footer-logo">
+    <a href="#" class="nav-link">
+      <img src="../../assets/logo/logo.svg" alt="" width="40" height="40" class="d-inline-block align-text-top">
+      Dev Ui
+    </a>
+  </div>
+  <p class="footer-desc">Developer process automation, outsource the repetitve and boring process and get extra time to progress faster.</p>
+</div>
+  <h2 class="footer-writer">  Written ✍🏻 by <br> Shubham Bajaj.  
+  </h2>
+</footer>
+</body>
+
+</html>
