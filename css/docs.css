@@ -173,11 +173,43 @@ aside {
   color: red;
 }
 
+/* .header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  z-index: 5;
+}
+
+.aside{
+  position: fixed;
+  top: 78px;
+  height: 100%;
+  z-index: 4;
+}
+
+.main{
+  margin-top: 100px;
+}
+
+.footer{
+  position: relative;
+  z-index: 10;
+} */
+
 @media (max-width:768px) {
 
   .container {
     padding: 3vmin;
   }
+
+  /* .header{
+    position: relative;
+  }
+
+  .main{
+    margin-top: initial;
+  } */
 
   .aside .material-icons {
     font-size: calc(2*var(--size-9));
@@ -192,6 +224,8 @@ aside {
   }
 
   .aside {
+    /* position: relative;
+    top: 0; */
     border-right: 0;
     background-color: rgb(196, 194, 194);
   }
