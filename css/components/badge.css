@@ -1,7 +1,3 @@
-@import "../helpers/spacing.css";
-@import "../utilities/variables.css";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 .badge-wrapper{
     display: inline-block;
 }

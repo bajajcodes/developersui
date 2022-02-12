@@ -7,6 +7,10 @@
     --xl:1280px;
     --xxl:1536px;
 
+    --container-ratio: 9 / 16;
+    --container-width: 98vmin;
+    --container-height: calc(var(--container-width) * var(--container-ratio));
+
     --radius-sm: 5px;
     --radius-md: 10px;
     --radius-lg: 15px;
@@ -45,6 +49,8 @@
     --lynx-white:#F7F7F7;
     --voilet:#5348C7;
     --lynx-gray:#C5C5C5;
+
+    --logo-color:#38cfea;
 
     --green:#87d068;
     --red:#ff5500;

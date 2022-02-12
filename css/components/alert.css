@@ -1,9 +1,3 @@
-@import "../utilities/variables.css";
-@import "../helpers/spacing.css";
-@import "../helpers/flexbox.css";
-@import "../helpers/typography.css";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 .alert{
     padding:var(--size-9);
     margin:var(--size-9);

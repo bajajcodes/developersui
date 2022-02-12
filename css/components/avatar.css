@@ -1,8 +1,5 @@
-@import "../helpers/border.css";
-
 .avatar{
     border-radius: var(--radius-full);
-    object-fit: contain;
     width: calc(3*var(--size-9));
     height: calc(3*var(--size-9));
 }
