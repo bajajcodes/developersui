@@ -1,0 +1,7 @@
+.stacked-list-item{
+    margin: 0;
+}
+
+.spaced-list-item{
+    margin: var(--size-9) auto;
+}
