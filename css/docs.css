@@ -195,6 +195,7 @@ aside {
 .footer{
   position: relative;
   z-index: 10;
+  background: white;
 } */
 
 @media (max-width:768px) {
@@ -203,13 +204,9 @@ aside {
     padding: 3vmin;
   }
 
-  /* .header{
-    position: relative;
+  .header{
+    /* position: relative; */
   }
-
-  .main{
-    margin-top: initial;
-  } */
 
   .aside .material-icons {
     font-size: calc(2*var(--size-9));
@@ -225,7 +222,7 @@ aside {
 
   .aside {
     /* position: relative;
-    top: 0; */
+    top: initial; */
     border-right: 0;
     background-color: rgb(196, 194, 194);
   }
@@ -240,7 +237,6 @@ aside {
   .aside .navbar {
     transform: translateX(-100%);
     transition: transform 560ms;
-
   }
 
   .aside .show-navbar {
