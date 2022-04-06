@@ -1,0 +1,18 @@
+.dgrid{
+    display: grid;
+}
+
+.grid-columns-auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid-columns-auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.decorate-column{
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+}
