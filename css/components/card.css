@@ -15,6 +15,9 @@
   border: var(--size-1) solid;
   border-radius: var(--size-3);
   width: calc(20 * var(--size-9));
+}
+
+.article-component-container .card {
   box-shadow: 10px 10px 1px var(--card-box-shadow);
 }
 
