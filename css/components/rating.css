@@ -1,0 +1,9 @@
+.star{
+  font-size: var(--size-15);
+  cursor: pointer;
+}
+
+.reviewStars{
+  width: 40%;
+  margin: auto;
+}
