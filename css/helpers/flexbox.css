@@ -73,3 +73,7 @@
 .flex-wrap-reverse {
     flex-wrap: wrap-reverse;
 }
+
+.align-self-start{
+    align-self: flex-start;
+}

@@ -1,7 +1,39 @@
-.stacked-list-item{
-    margin: 0;
+.list-width {
+  width: calc(var(--size-9) * 20);
 }
 
-.spaced-list-item{
-    margin: var(--size-9) auto;
+.stacked-list-item,
+.spaced-list-item {
+  margin: 0;
+  padding: var(--size-5);
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid;
+}
+
+.stacked-list-item a,
+.spaced-list-item a {
+  margin-left: auto;
+  color: var(--black);
+}
+
+.notify-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--size-4);
+}
+
+.notify-title {
+  font-weight: bold;
+  font-size: var(--size-10);
+}
+
+.notify-time {
+  font-weight: 700;
+  font-size: small;
+}
+
+.spaced-list-item {
+  margin: var(--size-9) auto;
 }

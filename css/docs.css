@@ -36,6 +36,17 @@ aside {
   padding-left: var(--size-4);
 }
 
+.aside{
+  z-index: 5;
+  background: var(--white);
+  height: max-content;
+  max-height: max-content;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  position: sticky;
+  top: 80px;
+}
+
 .aside .navbar,
 .aside .navbar-nav {
   flex-direction: column;
@@ -73,13 +84,19 @@ aside {
 }
 
 .header {
-  border-bottom: var(--size-1) solid;
+  border-bottom: var(--size-3) solid;
+  position: sticky;
+  z-index: 10;
+  background: white;
+  top: 0;
 }
 
 .footer {
-  border-top: var(--size-1) solid;
+  border-top: var(--size-3) solid;
   display: flex;
   padding: var(--size-9);
+  z-index: 10;
+  background: var(--white );
 }
 
 .footer-brand,
@@ -99,6 +116,8 @@ aside {
   margin: 1vmin auto;
   width: var(--container-width);
   min-height: var(--container-height);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .article {
@@ -174,38 +193,10 @@ aside {
   color: red;
 }
 
-/* .header{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--white);
-  z-index: 5;
-}
-
-.aside{
-  position: fixed;
-  top: 78px;
-  height: 100%;
-  z-index: 4;
-}
-
-.main{
-  margin-top: 100px;
-}
-
-.footer{
-  position: relative;
-  z-index: 10;
-  background: white;
-} */
 
 @media (max-width: 768px) {
   .container {
     padding: 3vmin;
-  }
-
-  .header {
-    /* position: relative; */
   }
 
   .aside .material-icons {
@@ -221,10 +212,9 @@ aside {
   }
 
   .aside {
-    /* position: relative;
-    top: initial; */
     border-right: 0;
     background-color: rgb(196, 194, 194);
+    height: initial;
   }
 
   .beautify-aside {

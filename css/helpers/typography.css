@@ -107,3 +107,19 @@
 .text-style-normal{
     font-style: normal;
 }
+
+.text-green{
+    color: var(--green);
+}
+
+.text-red{
+    color: var(--red);
+}
+
+.text-yellow{
+    color: var(--yellow);
+}
+
+.text-blue{
+    color: var(--blue);
+}
