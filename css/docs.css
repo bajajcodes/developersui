@@ -3,7 +3,7 @@ body {
   grid-template-areas:
     "header header"
     "nav main"
-    "footer footer";
+    "nav footer";
   grid-template-columns: minmax(auto, 12em) 5fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -37,14 +37,13 @@ aside {
 }
 
 .aside{
-  z-index: 5;
+  z-index: 9;
   background: var(--white);
-  height: max-content;
-  max-height: max-content;
-  border-bottom: 4px solid;
+  /* height: 100vh;   */
+  /* border-bottom: 4px solid; */
   border-right: 4px solid;
-  position: sticky;
-  top: 80px;
+    position: sticky;
+    top: 80px;
 }
 
 .aside .navbar,
@@ -95,7 +94,7 @@ aside {
   border-top: var(--size-3) solid;
   display: flex;
   padding: var(--size-9);
-  z-index: 10;
+  /* z-index: 10; */
   background: var(--white );
 }
 
@@ -214,7 +213,7 @@ aside {
   .aside {
     border-right: 0;
     background-color: rgb(196, 194, 194);
-    height: initial;
+    /* height: initial; */
   }
 
   .beautify-aside {
