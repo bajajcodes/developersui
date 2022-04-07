@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/docs.css">
     <script src="../scripts/navbar.js" defer></script>
     <script src="../scripts/aside-navbar.js" defer></script>
-    <title>Docs: Grid</title>
+    <title>Docs: Toast</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 
             <div class="navbar-brand">
                 <a href="../index.html" class="nav-link">
-                    <img src="../assets/logo/logo.svg" alt="logo for Dev Ui" width="40" height="40"
+                    <img src="../assets/logo/logo.svg" alt="" width="40" height="40"
                         class="d-inline-block align-text-top">
                     Dev Ui
                 </a>
@@ -53,13 +53,13 @@
                 <li class="nav-item"><a href="badge.html" class="nav-link">Badge</a></li>
                 <li class="nav-item"><a href="button.html" class="nav-link">Button</a></li>
                 <li class="nav-item"><a href="card.html" class="nav-link">Card </a></li>
-                <li class="nav-item"><a href="grid.html" class="nav-link active ">Grid </a></li>
+                <li class="nav-item"><a href="grid.html" class="nav-link ">Grid </a></li>
                 <li class="nav-item"><a href="heading.html" class="nav-link">Heading</a></li>
                 <li class="nav-item"><a href="image.html" class="nav-link">Image</a></li>
                 <li class="nav-item"><a href="input.html" class="nav-link">Input</a></li>
                 <li class="nav-item"><a href="list.html" class="nav-link">List</a></li>
                 <li class="nav-item"><a href="navbar.html" class="nav-link">Navbar </a></li>
-                <li class="nav-item"><a href="toast.html" class="nav-link">Toast </a></li>
+                <li class="nav-item"><a href="toast.html" class="nav-link active">Toast </a></li>
             </ul>
 
         </nav>
@@ -74,49 +74,76 @@
     <main class="container">
 
         <article class="article">
-            <h2>Grid</h2>
+            <h2>Toast</h2>
 
             <div class="article-component-container">
                 <div class="article-component-header">
-                    <h3>Two Column Grid</h3>
+                    <h3>Simple Toast</h3>
                     <p>
-                        Grid column layout containing two items, with equal columns width.
+                        Toast with message.
                     </p>
                 </div>
                 <div class="article-component-body">
-                    <div class="dgrid grid-columns-auto-fit decorate-column">
-                        <div class="decorate-column">Item One</div>
-                        <div class="decorate-column">Item Two</div>
-                    </div>
-            </div>
-                <div class="article-component-footer">
-                    <code>
-                        <script src="https://gist.github.com/shmbajaj/ea3c1ca8a7ac66dcd0c2bcf87c6264b6.js"></script>
-                    </code>
-                </div>
-            </div>
-
-            <div class="article-component-container">
-                <div class="article-component-header">
-                    <h3>Three Column Grid</h3>
-                    <p>
-                        Grid column layout containing three items, with equal columns width. On adding more than three columns grid will automatically manage columns and gives equal space to all.
-                    </p>
-                </div>
-                <div class="article-component-body">
-                        <div class="dgrid grid-columns-auto-fit decorate-column p-md">
-                            <div class="decorate-column">Item One</div>
-                            <div class="decorate-column">Item Two</div>
-                            <div class="decorate-column">Item Three</div>
+                    <div class="toast m-auto">
+                        <div class="toast-header">
+                            <strong>A simple toast message.</strong>
                         </div>
+                    </div>
                 </div>
                 <div class="article-component-footer">
                     <code>
-                        <script src="https://gist.github.com/shmbajaj/21756ad711b59756cf588451094d1d59.js"></script>
+                        <script src="https://gist.github.com/shmbajaj/264a05d8f5a379f3f7d57f2dd1623f64.js"></script>
                     </code>
                 </div>
             </div>
 
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Simple Toast with close button</h3>
+                    <p>
+                        Hover over the close button to see animation and use javascript to make it actionable.
+                    </p>
+                </div>
+                <div class="article-component-body">
+                    <div class="toast m-auto">
+                        <div class="toast-header">
+                            <strong>A Simple Toast Message</strong>
+                            <button class="toast-header-button">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/8b1865cafaba39f1a21567b451b10be7.js"></script>
+                    </code>
+                </div>
+            </div>
+
+            <div class="article-component-container">
+                <div class="article-component-header">
+                    <h3>Toast with description</h3>
+                </div>
+                <div class="article-component-body">
+                    <div class="toast m-auto">
+                        <div class="toast-header">
+                            <strong>Toast Message</strong>
+                            <button class="toast-header-button">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body">
+                            Hello, Dev Ui buddies! This is a toast message.
+                        </div>
+                    </div>
+                </div>
+                <div class="article-component-footer">
+                    <code>
+                        <script src="https://gist.github.com/shmbajaj/1e8497d24e4a0f80b033dc60ba24c82a.js"></script>
+                    </code>
+                </div>
+            </div>
 
         </article>
 
@@ -128,7 +155,7 @@
         <div class="footer-brand">
             <div class="navbar-brand footer-logo">
                 <a href="#" class="nav-link">
-                    <img src="../../assets/logo/logo.svg" alt="logo for Dev Ui" width="40" height="40"
+                    <img src="../../assets/logo/logo.svg" alt="" width="40" height="40"
                         class="d-inline-block align-text-top">
                     Dev Ui
                 </a>
