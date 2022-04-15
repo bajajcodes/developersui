@@ -3,7 +3,7 @@ body {
   grid-template-areas:
     "header header"
     "nav main"
-    "nav footer";
+    "footer footer";
   grid-template-columns: minmax(auto, 12em) 5fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -30,7 +30,7 @@ main {
 }
 
 aside {
-  border-right: var(--size-1) solid;
+  /* border-right: var(--size-1) solid; */
   position: relative;
   padding-top: var(--size-4);
   padding-left: var(--size-4);
@@ -41,9 +41,12 @@ aside {
   background: var(--white);
   /* height: 100vh;   */
   /* border-bottom: 4px solid; */
-  border-right: 4px solid;
+  /* border-right: 4px solid; */
     position: sticky;
     top: 80px;
+    height: 60vh; 
+    overflow-y: auto;  
+    overflow-x: hidden;
 }
 
 .aside .navbar,
@@ -55,9 +58,18 @@ aside {
   flex-wrap: initial;
 }
 
+.aside .navbar{
+  margin-left: var(--size-6);
+  margin-top: var(--size-6);
+}
+
 .aside .navbar-nav {
   margin-top: var(--size-5);
   margin-bottom: var(--size-5);
+}
+
+.aside-navbar-nav{
+  list-style-type: none;
 }
 
 .aside .navbar-nav .nav-item {
@@ -213,7 +225,8 @@ aside {
   .aside {
     border-right: 0;
     background-color: rgb(196, 194, 194);
-    /* height: initial; */
+    height: initial;
+    overflow-y: hidden;
   }
 
   .beautify-aside {
@@ -221,6 +234,7 @@ aside {
     background-color: rgba(255, 253, 253, 0.986);
     width: 100%;
     height: 100vh;
+    overflow-y: visible;
   }
 
   .aside .navbar {
